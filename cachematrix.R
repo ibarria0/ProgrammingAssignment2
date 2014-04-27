@@ -1,8 +1,7 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
-
+#make the cached matrix list
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
         set <- function(y) {
@@ -17,6 +16,7 @@ makeCacheMatrix <- function(x = matrix()) {
              getsolve = getsolve)
 }
 
+#check if inverse is cached, solve otherwise
 cacheSolve <- function(x, ...) {
         m <- x$getsolve()
         if(!is.null(m)) {
